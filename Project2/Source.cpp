@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include<string.h>
-#include <conio.h>
 #define MAXLEN 10240
 
 char filepath[250];
@@ -107,7 +106,7 @@ void decrypt(char* messagenew[MAXLEN], char* key)
 
 
 void getencryptfile(char* messagenew[MAXLEN]) {
-    fpt = fopen("C:\\temp\\encrptfile.txt", "w");
+    fpt = fopen("..\\testnew.txt", "w");
     if (fpt == NULL)
     {
         printf("Error!");
@@ -152,7 +151,7 @@ int main()
 {
     while (1) {
         menu();
-        scanf_s("%d", &choice);
+        scanf("%d", &choice);
         if (choice == '3') {
             break;
         }
